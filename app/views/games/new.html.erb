@@ -1,0 +1,23 @@
+<div class="main-wrapper">
+  <div class="main-container">
+    <h1>Form the longest word possible</h1>
+    <h2>Last score <%= cookies[:score]%> </h2>
+    <ul class="letters-list">
+      <% @letters.each do |element| %>
+      <li class="letters-list-item">
+        <%=  element.upcase %>
+      </li>
+      <% end %>
+    </ul>
+    <form action="/score" method="POST" class="form-attempt">
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      <%= hidden_field_tag :letters, @letters %>
+      <input type="text" name="attempt" placeholder="Enter your word here">
+      <input type="submit" value="Get score" class="score-button">
+    </form>
+    <a class="btn btn-default btn-lg" href="/new" role="button">Refresh</a>
+  </div>
+</div>
+
+
+

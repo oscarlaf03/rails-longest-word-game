@@ -1,0 +1,103 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+ /*
+ font-family: 'Fascinate Inline', cursive;
+font-family: 'Poiret One', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'NTR', sans-serif;
+font-family: 'Numans', sans-serif;
+font-family: 'Bubbler One', sans-serif;
+font-family: 'Comfortaa', cursive;
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Bubbler+One|Comfortaa|Fascinate+Inline|NTR|Numans|Poiret+One|Righteous');
+
+body {
+  background: linear-gradient(to right, #667db6 , #0082c8, #0082c8,#667db6);
+}
+
+.main-wrapper {
+  text-align:center;
+  height: 100%;
+
+}
+.main-container {
+  margin-top: 10%;
+  height:50%;
+  position: relative;
+  margin-bottom: 10%;
+
+}
+
+.main-container * {
+  margin:10px;
+  padding:10px;
+}
+
+.letters-list {
+  list-style-type: none;
+}
+
+.letters-list-item {
+  font-family: "Poiret One";
+  text-align: center;
+  display: inline-block;
+  padding: 20px;
+  font-size: 38px;
+  border: 2px solid white;
+  border-radius: 10px;
+  color:white;
+  min-width: 38px;
+  &:hover{
+    background:#74ebd5;
+    color: #7303c0;
+    border-color: #7303c0;
+  }
+}
+
+.form-attempt, input {
+  text-align:center;
+  font-size:35px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 15px;
+  font-family: "ntr";
+
+}
+
+.score-button{
+  &:hover{
+    background:#74ebd5;
+    color: #7303c0;
+    border-color: #7303c0;
+  }
+}
+
+.btn {
+  font-size: 55px;
+  &:hover{
+    background:#74ebd5;
+    color: #7303c0;
+    border-color: #7303c0;
+  }
+}
+
+.main-container h1 {
+  font-size: 70px;
+  font-family: "Comfortaa";
+  color:white;
+}
+
+.main-container h2 {
+  font-size: 60px;
+  font-family:"Bubbler One";
+  color:white;
+}
+
+.main-container h3 {
+  font-size: 45px;
+  color:white;
+  font-family:"ntr";
+}
